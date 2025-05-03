@@ -22,6 +22,9 @@ type MyStruct struct {
 var port = enx.MustGetInt("PORT")
 var maxConnections = enx.GetInt("MAX_CONNECTIONS", 10)
 var myStruct = enx.MustGetStruct[MyStruct]("MY_STRUCT")
+var duration = enx.GetDuration("DURATION", time.Second*10)
+var regex = enx.MustGetRegex("Regex")
+
 ```
 
 ## Related projects
