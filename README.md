@@ -11,12 +11,12 @@ go get github.com/pizzacream/enx
 
 ```go
 import (
-	"github.com/pizzacream/enx"
-	_ "github.com/pizzacream/enx/autoload"
+    "github.com/pizzacream/enx"
+    _ "github.com/pizzacream/enx/autoload"
 )
 
 type MyStruct struct {
-	Value string
+    Value string
 }
 
 var port = enx.MustGetInt("PORT")
